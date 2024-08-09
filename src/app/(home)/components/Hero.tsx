@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import heroImage from "../../../../public/images/hero-desktop.png";
+import heroMobile from "../../../../public/images/hero-mobile.png";
+
 const STATISTICS = [
   {
     data: "200+",
@@ -53,20 +56,18 @@ const HeroSection = () => {
 
       {/* Background Image */}
       <Image
-        fill
-        src="/images/hero-desktop.png"
+        src={heroImage}
         alt="hero.png"
         unoptimized
-        className="hidden lg:block"
+        className="absolute hidden h-full w-full object-cover lg:block"
       />
 
       {/* Hero image for mobile */}
-      <div className="relative lg:hidden">
+      <div className="relative flex justify-center lg:hidden">
         <Image
-          height={450}
-          width={1000}
-          src="/images/hero-mobile.png"
+          src={heroMobile}
           alt="hero.png"
+          className="h-auto w-full"
           unoptimized
         />
       </div>
