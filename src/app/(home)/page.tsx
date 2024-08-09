@@ -1,13 +1,11 @@
-import Image from "next/image";
 import HeroSection from "./components/Hero";
+import Brands from "./components/Brands";
 
 const HomePage = () => {
   return (
     <div>
       <HeroSection />
-
-      {/* Brands */}
-      <section className="min-h-24 bg-black"></section>
+      <Brands />
     </div>
   );
 };
