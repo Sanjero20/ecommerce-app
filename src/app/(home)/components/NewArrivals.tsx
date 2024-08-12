@@ -1,3 +1,4 @@
+import ProductCard from "@/components/ProductCard";
 import Card from "@/components/ui/Card";
 import { NEW_ARRIVALS } from "@/data/new-arrivals";
 import Image from "next/image";
@@ -12,12 +13,7 @@ const NewArrivals = () => {
       {/*  */}
       <div className="flex snap-x gap-8 overflow-x-scroll md:overflow-x-auto">
         {NEW_ARRIVALS.map((product) => (
-          <Card
-            key={product.name}
-            className="relative h-60 min-w-56 p-4 lg:h-72 lg:min-w-64"
-          >
-            <Image src={product.src} alt={product.name} />
-          </Card>
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
