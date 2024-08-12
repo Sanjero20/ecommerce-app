@@ -15,6 +15,7 @@ const config: Config = {
       backgroundColor: {
         hero: "#F2F0F1",
         search: "#F0F0F0",
+        card: "#F0EEED",
       },
       colors: {
         primary: "#000000",
