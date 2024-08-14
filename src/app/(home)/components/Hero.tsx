@@ -20,9 +20,9 @@ const STATISTICS = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen flex-col bg-hero lg:flex-row">
-      <div className="container z-[2] flex flex-col py-4 lg:flex-row">
-        {/* left */}
+    <section className="relative flex h-full flex-col justify-center bg-hero lg:flex-row">
+      {/* left */}
+      <div className="container z-[2] flex h-full flex-col py-4 lg:absolute lg:flex-row">
         <div className="flex flex-col gap-6 lg:w-1/2 lg:justify-center">
           <h1 className="font-integral text-4xl uppercase lg:text-6xl">
             find clothes that matches your style
@@ -58,8 +58,9 @@ const HeroSection = () => {
       <Image
         src={heroImage}
         alt="hero.png"
+        style={{ width: "auto", height: "auto" }}
         unoptimized
-        className="absolute hidden h-full w-full object-cover lg:block"
+        className="hidden h-full w-full lg:block"
       />
 
       {/* Hero image for mobile */}
@@ -68,6 +69,7 @@ const HeroSection = () => {
           src={heroMobile}
           alt="hero.png"
           className="h-auto w-full"
+          style={{ width: "auto", height: "auto" }}
           unoptimized
         />
       </div>
