@@ -14,7 +14,7 @@ const ProductCard = ({ product }: Props) => {
 
   return (
     <div className="flex h-full w-full flex-col gap-1">
-      <Card className="h-60 min-w-56 p-2 lg:h-72 lg:min-w-64">
+      <Card className="flex h-60 min-w-56 items-center justify-center overflow-hidden p-2 lg:h-72 lg:min-w-64">
         <Image src={product.src} alt={product.name} />
       </Card>
 
