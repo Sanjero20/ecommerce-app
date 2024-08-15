@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import heroImage from "../../../../public/images/hero-desktop.png";
 import heroMobile from "../../../../public/images/hero-mobile.png";
+import Button from "@/components/ui/Button";
 
 const STATISTICS = [
   {
@@ -34,9 +35,7 @@ const HeroSection = () => {
             style.
           </p>
 
-          <button className="w-full rounded-full bg-primary p-4 text-white md:w-48">
-            Shop Now
-          </button>
+          <Button className="w-full md:w-48">Shop Now</Button>
 
           {/* Statistics */}
           <div className="flex w-full flex-wrap justify-center gap-8 gap-y-4 lg:justify-start">
