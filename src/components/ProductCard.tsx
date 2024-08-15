@@ -1,6 +1,7 @@
 import { Product } from "@/types/index.types";
 import Card from "./ui/Card";
 import Image from "next/image";
+import StarRating from "./StarRating";
 
 interface Props {
   product: Product;
@@ -20,7 +21,7 @@ const ProductCard = ({ product }: Props) => {
       <p className="font-bold">{product.name}</p>
 
       <div className="flex gap-2">
-        {/* Star Rating */}
+        <StarRating rating={product.rating} />
         <p>{product.rating}/5</p>
       </div>
 
