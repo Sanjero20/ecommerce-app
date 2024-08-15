@@ -9,7 +9,7 @@ interface Props {
 
 const ProductShowcase = ({ title, products }: Props) => {
   return (
-    <div className="container flex flex-col gap-8 px-4 py-12">
+    <div className="flex flex-col gap-8 px-4 py-12">
       <h2 className="mb-4 text-center font-integral text-3xl uppercase lg:text-5xl">
         {title}
       </h2>
