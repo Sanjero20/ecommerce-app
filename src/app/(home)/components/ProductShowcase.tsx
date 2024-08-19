@@ -10,9 +10,7 @@ interface Props {
 const ProductShowcase = ({ title, products }: Props) => {
   return (
     <div className="flex flex-col gap-8 px-4 py-12">
-      <h2 className="mb-4 text-center font-integral text-3xl uppercase lg:text-5xl">
-        {title}
-      </h2>
+      <h2 className="mb-4 text-center">{title}</h2>
 
       <div className="flex snap-x gap-8 overflow-x-scroll md:overflow-x-auto">
         {products.map((product) => (
