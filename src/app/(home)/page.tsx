@@ -1,10 +1,11 @@
+import { NEW_ARRIVALS } from "@/data/new-arrivals";
+import { TOP_SELLING_PRODUCTS } from "@/data/top-selling";
+
 import HeroSection from "./components/Hero";
 import Brands from "./components/Brands";
 import ProductShowcase from "./components/ProductShowcase";
-
-import { NEW_ARRIVALS } from "@/data/new-arrivals";
-import { TOP_SELLING_PRODUCTS } from "@/data/top-selling";
 import DressStyle from "./components/DressStyle";
+import CustomerReviews from "./components/CustomerReviews";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
         <hr />
         <ProductShowcase title="top selling" products={TOP_SELLING_PRODUCTS} />
         <DressStyle />
+        <CustomerReviews />
       </div>
     </div>
   );
