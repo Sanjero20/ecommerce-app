@@ -12,7 +12,7 @@ const StarRating = ({ rating }: Props) => {
   const hasHalfStar = total - filledStars >= 0.5;
 
   return (
-    <div className="flex">
+    <div className="flex gap-1">
       {[...Array(filledStars)].map((_, index) => (
         <Image key={index} src={star} alt="" />
       ))}
