@@ -8,3 +8,9 @@ export type Product = {
   price: number;
   discount?: number;
 };
+
+export type Review = {
+  rating: number;
+  name: string;
+  content: string;
+};
