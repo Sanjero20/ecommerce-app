@@ -8,7 +8,7 @@ interface Props {
 
 const ReviewCard = ({ review }: Props) => {
   return (
-    <Card className="flex flex-col gap-2 border bg-white p-6">
+    <Card className="flex h-60 flex-col gap-2 border bg-white p-8">
       <StarRating rating={review.rating} />
 
       {/* Customer Name */}
@@ -23,7 +23,7 @@ const ReviewCard = ({ review }: Props) => {
 
       {/*  */}
       <p className="text-sm text-black/60 lg:text-base">
-        &ldquo;{review.content} &rdquo;
+        &ldquo;{review.content}&rdquo;
       </p>
     </Card>
   );

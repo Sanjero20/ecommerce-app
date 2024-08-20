@@ -1,7 +1,15 @@
+"use client";
+
 import ReviewCard from "./ui/ReviewCard";
 import { CUSTOMER_REVIEWS } from "@/data/customer-reviews";
 
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Navigation, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css";
+
 const CustomerReviews = () => {
+  // const {} = useSwiper();
+
   return (
     <section>
       <div>
@@ -15,11 +23,20 @@ const CustomerReviews = () => {
       </div>
 
       {/* Review Card List*/}
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+
+      <Swiper
+        modules={[Navigation, Scrollbar, A11y]}
+        spaceBetween={25}
+        slidesPerView={3}
+        navigation
+        scrollbar={{ draggable: true }}
+      >
         {CUSTOMER_REVIEWS.map((review, index) => (
-          <ReviewCard key={index} review={review} />
+          <SwiperSlide className="" key={index}>
+            <ReviewCard review={review} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
