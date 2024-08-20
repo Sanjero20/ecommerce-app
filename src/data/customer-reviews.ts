@@ -21,37 +21,44 @@ export const CUSTOMER_REVIEWS: Review[] = [
   },
   {
     rating: 5,
+    name: "John D.",
+    content:
+      "Shopping at Shop.co has been an incredible experience. The website is easy to navigate, and the checkout process is seamless. My orders always arrive on time, and the customer service is top-notch.",
+  },
+  {
+    rating: 5,
+    name: "Jane S.",
+    content:
+      "I’ve had nothing but positive experiences with Shop.co. Their collection is diverse, and the prices are unbeatable. The support team is always responsive and helpful, making the whole process a breeze.",
+  },
+  {
+    rating: 5,
+    name: "Alice J.",
+    content:
+      "What I love most about Shop.co is the attention to detail. From the personalized recommendations to the fast shipping, everything is designed with the customer in mind. I highly recommend them!",
+  },
+  {
+    rating: 5,
     name: "Bob B.",
-    content: "",
+    content:
+      "Shop.co is my go-to online store. The user interface is intuitive, and I can find what I need without any hassle. Plus, the deals they offer are incredible!",
   },
   {
     rating: 5,
     name: "Charlie W.",
-    content: "",
+    content:
+      "I’ve shopped at many online stores, but Shop.co stands out for its exceptional service. Their commitment to customer satisfaction is evident in every interaction. I’m a loyal customer for life.",
   },
   {
     rating: 5,
     name: "Emily R.",
-    content: "",
+    content:
+      "The best part about shopping at Shop.co is the peace of mind. I know that I’ll receive exactly what I ordered, and if there’s ever an issue, their customer service team handles it quickly and professionally.",
   },
   {
     rating: 5,
     name: "Daniel K.",
-    content: "",
-  },
-  {
-    rating: 5,
-    name: "Sarah M.",
-    content: "",
-  },
-  {
-    rating: 5,
-    name: "Tom H.",
-    content: "",
-  },
-  {
-    rating: 5,
-    name: "Laura P.",
-    content: "",
+    content:
+      "I appreciate how Shop.co values its customers. The loyalty program is fantastic, and I’ve earned so many rewards. It’s clear that they care about building long-term relationships with their shoppers.",
   },
 ];
