@@ -35,7 +35,9 @@ const HeroSection = () => {
             style.
           </p>
 
-          <Button className="w-full md:w-48">Shop Now</Button>
+          <Button variant="primary" className="w-full md:w-48">
+            Shop Now
+          </Button>
 
           {/* Statistics */}
           <div className="flex w-full flex-wrap justify-center gap-8 gap-y-4 lg:justify-start">

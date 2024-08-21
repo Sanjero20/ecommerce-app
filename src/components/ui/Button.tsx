@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 import clsx from "clsx";
 
-type ButtonType = "primary" | "outline";
+type ButtonType = "default" | "primary" | "outline";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -12,7 +12,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({
   children,
   className,
-  variant = "primary",
+  variant = "default",
   ...props
 }: Props) => {
   const styles = clsx(
@@ -24,7 +24,7 @@ const Button = ({
   );
 
   return (
-    <button {...props} className={styles}>
+    <button className={styles} {...props}>
       {children}
     </button>
   );

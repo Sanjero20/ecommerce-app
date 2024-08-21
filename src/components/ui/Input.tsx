@@ -1,13 +1,20 @@
+import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
-import { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   icon?: string | StaticImageData;
+  className?: string;
 }
 
-const Input = ({ icon, ...props }: Props) => {
+const Input = ({ icon, className, ...props }: Props) => {
+  const styles = clsx(
+    "w-full rounded-full bg-search py-3 pl-12 pr-6 placeholder:text-black/40",
+    className,
+  );
+
   return (
-    <div className="relative hidden flex-1 items-center lg:flex">
+    <div className="relative flex w-full items-center">
       {icon && (
         <Image
           src={icon}
@@ -19,10 +26,7 @@ const Input = ({ icon, ...props }: Props) => {
         />
       )}
 
-      <input
-        className="w-full rounded-full bg-search py-3 pl-12 pr-6 placeholder:text-black/40"
-        {...props}
-      />
+      <input {...props} className={styles} />
     </div>
   );
 };

@@ -47,7 +47,12 @@ const Header = () => {
         </nav>
       </div>
 
-      <Input icon={"/icons/search.svg"} placeholder="Search for products..." />
+      <div className="hidden flex-1 lg:flex">
+        <Input
+          icon={"/icons/search.svg"}
+          placeholder="Search for products..."
+        />
+      </div>
 
       {/* Icons */}
       <div className="flex gap-4">
