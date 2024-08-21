@@ -16,6 +16,7 @@ const config: Config = {
         hero: "#F2F0F1",
         search: "#F0F0F0",
         card: "#F0EEED",
+        footer: "#F0F0F0",
       },
       colors: {
         primary: "#000000",
