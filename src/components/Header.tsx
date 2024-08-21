@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Input from "./ui/Input";
 
 const Header = () => {
   return (
@@ -46,22 +47,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="relative hidden flex-1 items-center lg:flex">
-        {/* Search icon */}
-        <Image
-          src={"/icons/search.svg"}
-          className="absolute ml-4 select-none contrast-0 filter"
-          width={24}
-          height={24}
-          alt="search"
-          draggable="false"
-        />
-
-        <input
-          placeholder="Search for products..."
-          className="bg-search w-full rounded-full py-3 pl-12 pr-6 placeholder:text-black/40"
-        />
-      </div>
+      <Input icon={"/icons/search.svg"} placeholder="Search for products..." />
 
       {/* Icons */}
       <div className="flex gap-4">
