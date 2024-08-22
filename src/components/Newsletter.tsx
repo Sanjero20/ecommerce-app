@@ -14,7 +14,7 @@ const NewsLetter = () => {
           <div className="flex w-full flex-1 flex-col gap-4">
             <Input
               icon="icons/mail.svg"
-              className="bg-white"
+              className="bg-white text-black"
               placeholder="Enter your email address"
             />
 
