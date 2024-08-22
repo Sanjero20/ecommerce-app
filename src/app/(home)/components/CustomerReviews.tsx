@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import ReviewCard from "./ui/ReviewCard";
-import Icon from "@/components/ui/Icon";
+import { Icon } from "@/components/ui/Icon";
 import { CUSTOMER_REVIEWS } from "@/data/customer-reviews";
 
 import { Swiper, SwiperSlide } from "swiper/react";
