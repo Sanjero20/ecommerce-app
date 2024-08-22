@@ -3,7 +3,8 @@ import { integral, satoshi } from "./fonts";
 import "./globals.css";
 
 import Header from "@/components/Header";
-import Footer from "@/components/ui/Footer";
+import NewsLetter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "SC | ShopCo",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${integral.variable} ${satoshi.variable} bg-white`}>
         <Header />
         <main className="font-satoshi-bold">{children}</main>
+        <NewsLetter />
         <Footer />
       </body>
     </html>
