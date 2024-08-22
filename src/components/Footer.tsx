@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Shop Info */}
           <div className="col-span-2 flex flex-col justify-between gap-4">
             <div>
-              <h2 className="mb-3 text-[28px] md:text-3xl md:leading-6">
+              <h2 className="mb-6 text-[28px] md:text-3xl md:leading-6">
                 SHOP.CO
               </h2>
               <p className="text-black/60 lg:w-4/6">
