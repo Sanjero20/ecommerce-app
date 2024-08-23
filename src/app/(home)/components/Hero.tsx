@@ -61,7 +61,7 @@ const HeroSection = () => {
         alt="hero.png"
         style={{ width: "auto", height: "auto" }}
         unoptimized
-        className="hidden h-full w-full lg:block"
+        className="hidden h-full min-h-96 w-full lg:block"
       />
 
       {/* Hero image for mobile */}
