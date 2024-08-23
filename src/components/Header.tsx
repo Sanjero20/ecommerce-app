@@ -4,7 +4,7 @@ import { Icon } from "./ui/Icon";
 
 const Header = () => {
   return (
-    <header className="container flex h-[15vh] items-center justify-between gap-10 bg-white">
+    <header className="container flex h-16 items-center justify-between gap-10 bg-white lg:h-24">
       <div className="flex items-center gap-10">
         <div className="flex items-center gap-2 lg:hidden">
           {/* Mobile */}
