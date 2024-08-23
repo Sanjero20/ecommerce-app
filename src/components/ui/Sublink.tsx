@@ -11,7 +11,12 @@ const Sublink = ({ title, links }: Props) => {
       <ul className="flex flex-col gap-4 text-black/60">
         {links.map((link, index) => (
           <li key={index}>
-            <p className="w-fit hover:cursor-pointer hover:underline">{link}</p>
+            <a
+              // href=""
+              className="w-fit hover:cursor-pointer hover:underline"
+            >
+              {link}
+            </a>
           </li>
         ))}
       </ul>

@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 
 interface Props {
-  src: StaticImageData;
+  src: StaticImageData | string;
   size?: number;
 }
 

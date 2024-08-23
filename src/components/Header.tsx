@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Input from "./ui/Input";
+import { Icon } from "./ui/Icon";
 
 const Header = () => {
   return (
@@ -7,13 +8,9 @@ const Header = () => {
       <div className="flex items-center gap-10">
         <div className="flex items-center gap-2 lg:hidden">
           {/* Mobile */}
-          <Image
-            src={"/icons/hamburger.svg"}
-            className="mt-1"
-            width={24}
-            height={24}
-            alt=""
-          />
+          <div className="mt-1">
+            <Icon src={"/icons/hamburger.svg"} />
+          </div>
 
           {/* Mobile Logo */}
           <div className="font-integral text-2xl">SHOP.CO</div>
@@ -30,15 +27,10 @@ const Header = () => {
 
         {/* Navbar */}
         <nav className="hidden lg:block">
-          <ul className="flex gap-6">
+          <ul className="links flex gap-6">
             <li className="flex gap-1">
               Shop
-              <Image
-                src={"/icons/caret-down.svg"}
-                width={16}
-                height={16}
-                alt=""
-              />
+              <Icon src={"/icons/caret-down.svg"} size={16} />
             </li>
             <li>On Sale</li>
             <li>New Arrivals</li>
@@ -56,15 +48,11 @@ const Header = () => {
 
       {/* Icons */}
       <div className="flex gap-4">
-        <Image
-          src={"/icons/search.svg"}
-          width={24}
-          height={24}
-          alt=""
-          className="lg:hidden"
-        />
-        <Image src={"/icons/cart.svg"} width={24} height={24} alt="" />
-        <Image src={"/icons/account.svg"} width={24} height={24} alt="" />
+        <div className="lg:hidden">
+          <Icon src={"/icons/search.svg"} />
+        </div>
+        <Icon src={"/icons/cart.svg"} />
+        <Icon src={"/icons/account.svg"} />
       </div>
     </header>
   );
