@@ -7,13 +7,15 @@ import { Product } from "@/types/index.types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
+import Link from "next/link";
 
 interface Props {
   title: string;
   products: Product[];
+  href: string;
 }
 
-const ProductShowcase = ({ title, products }: Props) => {
+const ProductShowcase = ({ title, products, href }: Props) => {
   return (
     <div className="flex flex-col gap-8 px-4 py-12">
       <h2 className="mb-4 text-center">{title}</h2>
@@ -43,9 +45,11 @@ const ProductShowcase = ({ title, products }: Props) => {
         ))}
       </Swiper>
 
-      <Button className="mx-auto w-full sm:max-w-48" variant="outline">
-        View All
-      </Button>
+      <Link href={href} className="mx-auto w-full sm:max-w-48" tabIndex={-1}>
+        <Button className="w-full" variant="outline">
+          View All
+        </Button>
+      </Link>
     </div>
   );
 };

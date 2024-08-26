@@ -14,9 +14,17 @@ const HomePage = () => {
       <Brands />
 
       <div className="container">
-        <ProductShowcase title="new arrivals" products={NEW_ARRIVALS} />
+        <ProductShowcase
+          title="new arrivals"
+          products={NEW_ARRIVALS}
+          href="/new-arrivals"
+        />
         <hr />
-        <ProductShowcase title="top selling" products={TOP_SELLING_PRODUCTS} />
+        <ProductShowcase
+          title="top selling"
+          products={TOP_SELLING_PRODUCTS}
+          href="/top-selling"
+        />
         <DressStyle />
         <CustomerReviews />
       </div>
