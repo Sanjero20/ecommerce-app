@@ -62,8 +62,12 @@ const Header = () => {
         <div className="lg:hidden">
           <Icon src={"/icons/search.svg"} />
         </div>
-        <Icon src={"/icons/cart.svg"} />
-        <Icon src={"/icons/account.svg"} />
+        <Link href={"/cart"}>
+          <Icon src={"/icons/cart.svg"} />
+        </Link>
+        <Link href={"/account"}>
+          <Icon src={"/icons/account.svg"} />
+        </Link>
       </div>
     </header>
   );

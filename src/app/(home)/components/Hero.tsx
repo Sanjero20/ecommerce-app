@@ -3,6 +3,7 @@ import Image from "next/image";
 import heroImage from "../../../../public/images/hero-desktop.png";
 import heroMobile from "../../../../public/images/hero-mobile.png";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const STATISTICS = [
   {
@@ -35,10 +36,11 @@ const HeroSection = () => {
             style.
           </p>
 
-          <Button variant="primary" className="w-full md:w-48">
-            Shop Now
-          </Button>
-
+          <Link href={"/products"} className="w-fit">
+            <Button variant="primary" className="w-full md:w-48">
+              Shop Now
+            </Button>
+          </Link>
           {/* Statistics */}
           <div className="flex w-full flex-wrap justify-center gap-8 gap-y-4 lg:justify-start">
             {STATISTICS.map((stats, index) => (
