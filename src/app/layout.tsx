@@ -19,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${integral.variable} ${satoshi.variable} bg-white`}>
+      <body
+        className={`${integral.variable} ${satoshi.variable} flex min-h-screen flex-col justify-between bg-white`}
+      >
         <Header />
-        <main className="font-satoshi-bold">{children}</main>
+        <main className="font-satoshi-bold flex-1">{children}</main>
         <NewsLetter />
         <Footer />
       </body>
