@@ -36,8 +36,8 @@ const HeroSection = () => {
             style.
           </p>
 
-          <Link href={"/products"} className="w-fit">
-            <Button variant="primary" className="w-full md:w-48">
+          <Link href={"/products"} className="w-full md:w-48">
+            <Button variant="primary" className="w-full">
               Shop Now
             </Button>
           </Link>
